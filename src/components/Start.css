@@ -1,0 +1,42 @@
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 300px solid rgb(3, 2, 37);
+  border-radius:50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 100px 30px;
+}
+.startInput{
+    width: 264px;
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+    outline: 3px solid gray;
+    margin-bottom: 10px;
+    font-size:25px ;
+    font-weight: 500;
+    color: rgb(4, 4, 104);
+}
+.startBtn{
+    width: 290px;
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+    outline: 3px solid gray;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.startBtn:hover{
+    background: white;
+    color: rgb(4, 4, 104);
+}

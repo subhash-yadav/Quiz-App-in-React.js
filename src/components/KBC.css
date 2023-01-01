@@ -1,0 +1,68 @@
+.kbc{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.question{
+    border: 2px solid white;
+    width: 70%;
+    padding: 20px;
+    background: linear-gradient(#020230, #000);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+.answerContainer{
+    display: flex;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.answer{
+    width: 40%;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(#0e0124, #22074d);
+    margin:0 10px 20px 10px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.answer:hover, .active{
+    background: mediumblue;
+}
+.answer.correct{
+    animation: correct 3s ease forwards;
+}
+
+@keyframes correct {
+    0%,22%,42%{
+        background: mediumblue;
+    }
+    20%,40%,60%{
+        background: linear-gradient(#0e0124, #22074d);
+    }
+    62%,100%{
+        background: green;
+    }
+}
+
+.answer.wrong{
+    animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong {
+    0%,22%,42%{
+        background: mediumblue;
+    }
+    20%,40%,60%{
+        background: linear-gradient(#0e0124, #22074d);
+    }
+    62%,100%{
+        background: crimson;
+    }
+}
